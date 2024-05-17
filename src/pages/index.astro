@@ -1,0 +1,16 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import vue from "@astrojs/vue";
+import tailwind from "@astrojs/tailwind";
+import { Icon } from "astro-icon/components";
+import Directives from "../components/vue/Directives.vue";
+import ToDo from "../components/vue/ToDo.vue";
+---
+
+<Layout title="Welcome to Astro."> Hola </Layout>
+<ToDo client:load></ToDo>
+
+<!-- <Directives client:load>
+
+</Directives> -->
